@@ -1,4 +1,4 @@
-a# ⏳ Simple Event Countdown Timer
+# ⏳ Simple Event Countdown Timer
 
 **Simple Event Countdown** is a clean and minimal static website that displays a real-time countdown for a specific event.  
 This project was designed in **Figma** and converted into a functional website using **HTML, CSS, and JavaScript**.
@@ -11,8 +11,6 @@ https://simple-event-countdown.netlify.app/
 🎨 **Figma Design**:  
 https://www.figma.com/design/4GNX2fqCrVIVUieWgaTkiJ/Simple-Event-Countdown?node-id=0-1&t=ZKzRSHrNvf46bcBO-1
 
----
-
 ## 📌 About the Project
 
 This project focuses on a **simple yet effective event countdown timer** that dynamically updates in real time.  
@@ -22,8 +20,6 @@ The goal of this project is to demonstrate:
 - UI design to code workflow (Figma → HTML/CSS/JS)
 - JavaScript date & time calculations
 - Clean and responsive layout for event-based websites
-
----
 
 ## 🚀 Core Features
 
@@ -39,8 +35,6 @@ The goal of this project is to demonstrate:
 
 ✔ Deployed using Netlify  
 
----
-
 ## 🧩 Technologies Used
 
 **Figma** – UI/UX design  
@@ -52,8 +46,6 @@ The goal of this project is to demonstrate:
 **JavaScript (Vanilla JS)** – Countdown logic and time calculations  
 
 **Netlify** – Hosting and deployment  
-
----
 
 ## 💻 How to Run the Project Locally
 
