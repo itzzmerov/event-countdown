@@ -54,7 +54,7 @@ The goal of this project is to demonstrate:
    git clone https://github.com/your-username/simple-event-countdown.git
 
 2. **Open the Project Folder**
-    ```
+    ```bash
     cd simple-event-countdown
 
 3. **Run the Website**
