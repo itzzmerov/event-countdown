@@ -59,7 +59,7 @@ body {
     align-items: center;
     justify-content: center;
     font-family: 'Lato', sans-serif;
-    font-size: 3.5rem;
+    font-size: 4.2rem;
     font-weight: bold;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     margin-bottom: 5px;
@@ -69,87 +69,6 @@ body {
     transition: transform 0.1s ease;
     overflow: hidden;
     perspective: 400px;
-}
-
-/* Page-flip animation (basic fallback) */
-.digit.flipping {
-    animation: flipDown 0.3s ease forwards;
-}
-
-@keyframes flipDown {
-    0% {
-        transform: rotateX(0deg);
-        opacity: 1;
-    }
-
-    50% {
-        transform: rotateX(-90deg);
-        opacity: 0.5;
-    }
-
-    100% {
-        transform: rotateX(0deg);
-        opacity: 1;
-    }
-}
-
-.digit.flipped {
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.25);
-}
-
-/* Enhanced calendar-style flip animation */
-.digit.flip {
-    transform-style: preserve-3d;
-}
-
-.digit.flip .digit-top,
-.digit.flip .digit-bottom {
-    position: absolute;
-    width: 100%;
-    height: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background: linear-gradient(to bottom, #D1DBED, #64789A);
-    color: #0a192f;
-    font-size: 3.5rem;
-    font-weight: bold;
-    backface-visibility: hidden;
-    left: 0;
-}
-
-.digit.flip .digit-top {
-    top: 0;
-    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
-    transform-origin: bottom center;
-    animation: flipTop 0.3s ease forwards;
-}
-
-.digit.flip .digit-bottom {
-    bottom: 0;
-    border-top: 1px solid rgba(255, 255, 255, 0.2);
-    transform-origin: top center;
-    animation: flipBottom 0.3s ease forwards 0.15s;
-}
-
-@keyframes flipTop {
-    0% {
-        transform: rotateX(0deg);
-    }
-
-    100% {
-        transform: rotateX(-90deg);
-    }
-}
-
-@keyframes flipBottom {
-    0% {
-        transform: rotateX(90deg);
-    }
-
-    100% {
-        transform: rotateX(0deg);
-    }
 }
 
 .label {
@@ -224,28 +143,65 @@ body {
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
 }
 
-@media (max-width: 768px) {
+@media (max-width: 425px) {
     .event-title {
         font-size: 2rem;
+        margin-bottom: 1.5rem;
+    }
+
+    .countdown-container {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 10px;
+        margin-top: 1.5rem;
+        margin-bottom: 1.5rem;
+        justify-items: center;
+        width: 100%;
+        max-width: 400px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .digits-container {
+        align-items: center;
     }
 
     .digit {
-        width: 50px;
-        height: 70px;
-        font-size: 2rem;
+        width: 48px;
+        height: 68px;
+        font-size: 2.5rem;
     }
 
-    .digit.flip .digit-top,
-    .digit.flip .digit-bottom {
-        font-size: 2rem;
+    .label {
+        font-size: 1.1rem;
+        margin-top: 4px;
     }
 
     .content-section {
         flex-direction: column;
+        gap: 1.2rem;
+        margin-bottom: 1.2rem;
     }
 
     .image-container img {
-        max-width: 300px;
+        max-width: 280px;
+    }
+
+    .event-info {
+        max-width: 320px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .event-info h2 {
+        font-size: 1.2rem;
+    }
+
+
+    .info-item {
+        font-size: 1rem;
     }
 
     .set-event-btn {
@@ -254,19 +210,25 @@ body {
     }
 }
 
+/* Extra small phones */
 @media (max-width: 480px) {
     .digit {
-        width: 45px;
-        height: 65px;
-        font-size: 1.8rem;
+        width: 44px;
+        height: 64px;
+        font-size: 1.7rem;
     }
 
     .digit.flip .digit-top,
     .digit.flip .digit-bottom {
-        font-size: 1.8rem;
+        font-size: 1.7rem;
+    }
+
+    .label {
+        font-size: 1rem;
     }
 
     .countdown-container {
-        gap: 5px;
+        gap: 12px;
+        max-width: 320px;
     }
 }
