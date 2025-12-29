@@ -77,7 +77,7 @@ Created by John Rovie Balingbing a.k.a. <a href="https://www.github.com/itzzmero
 a freelance Frontend Developer & Ui/UX Web Designer
 
 🌐 View my full portfolio and other projects here:
-👉 https://your-portfolio-link.com
+👉 https://itzzmerov.netlify.app/
 
 If you like this project, feel free to ⭐ the repository or reach out for collaboration.
 
